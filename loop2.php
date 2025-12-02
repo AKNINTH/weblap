@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>งานที่1</title>
+    <title>loop2</title>
 </head>
-
 <body>
-    <h1>hello word</h1>
-    <a href="index.php">index.php</a>
+    
+
+    <?php
+    for($count = 1; $count <= 20; $count++){
+        echo "$count";
+        echo "<br>";
+    }
+    ?>
 </body>
 </html>
