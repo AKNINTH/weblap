@@ -5,28 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    
-    <form action = "p1.php" method ="POST">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.php">LOGO</a>
+                </li>
 
-        <input type = "text" name ="v1">
-        <br>
-        <select name = "op">
-            <option value="+">บวก</option>
-            <option value="-">ลบ</option>
-            <option value="*">คูณ</option>
-            <option value="+/">หาร</option>
-        </select>
-        <br>
-        <input type = "text" name ="v2">
-        <br>
-        <br>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
 
-        <input type = "submit" valus ="ซัมมิด">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
 
-    </form>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="1.php">งานที่ 1</a></li>
+                        <li><a class="dropdown-item" href="2.php">งานที่ 2</a></li>
+                        <li><a class="dropdown-item" href="3.php">งานที่ 3</a></li>
+                        <li><a class="dropdown-item" href="grade1.php">งานที่ 4</a></li>
+                        <li><a class="dropdown-item" href="loop3.php">งานที่ 5</a></li>
+                        <li><a class="dropdown-item" href="6.php">งานที่ 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center py-5 ">
+
+        <h1 class="mb-2">นาย ชนินทร์ เจริญยศ</h1>
+        <h2 class="mb-4 text-muted">รหัสนักศึกษา 2651031741204</h2>
+
+    <img class="border img-fluid shadow" src="pic/1.jpg" alt="รูปสวัสดีวันอังคาร"style="max-width: 300px; height: 300px;">
+
+</div>
 
 </body>
 </html>
