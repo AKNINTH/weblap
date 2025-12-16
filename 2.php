@@ -37,7 +37,9 @@
                         <li><a class="dropdown-item" href="3.php">งานที่ 3</a></li>
                         <li><a class="dropdown-item" href="grade1.php">งานที่ 4</a></li>
                         <li><a class="dropdown-item" href="loop3.php">งานที่ 5</a></li>
-                        <li><a class="dropdown-item" href="6.php">งานที่ 6</a></li>
+                        <li><a class="dropdown-item" href="read_file.php">งานที่ 6</a></li>
+                        <li><a class="dropdown-item" href="file_upload.php">งานที่ 7</a></li>
+                        <li><a class="dropdown-item" href="showimg.php">งานที่ 8</a></li>
                     </ul>
                 </li>
             </ul>

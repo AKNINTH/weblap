@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loop2</title>
+    <title>Document</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
         <div class="container-fluid">
@@ -44,34 +43,29 @@
             </ul>
         </div>
     </nav>
-
-    <form action = "" method ="POST">
-
-        <label for="input">input number:</label>
-        <input type = "text" name ="wloop3">
-        <br>
-        <input type = "submit" valus ="ซัมมิด">
-        <hr>
-
-    </form>
-
+    
+<div class="container text-center py-5 ">
     <?php
-    if($_POST){
+        $dir = "uploads/";
 
-        $number_input = $_POST["wloop3"];
-
-        if($number_input >= 21){
-            exit;
+        // Open a directory, and read its contents
+        if (is_dir($dir)){
+        if ($dh = opendir($dir)){
+            while (($file = readdir($dh)) !== false){
+                if ($file === '.' || $file === '..') {
+                    continue;
+                }
+                echo "<br>" . "filename:" . $file . "<br>" ;
+                $fullpath = $dir.$file;
+            
+                echo "<img src='" . $fullpath . "'" . "style='max-width: 300px; height: 300px;'";
+                echo "<br>";
+                
+            }
+            closedir($dh);
         }
-        elseif($number_input <= 0){
-            exit;
         }
-        else
-        for($count = 1; $count <= 12; $count++){
-            echo $number_input." X ".$count." = ". $number_input*$count;
-            echo "<br>";
-        }
-    }
     ?>
+</div>
 </body>
 </html>
